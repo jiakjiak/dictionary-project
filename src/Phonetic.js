@@ -1,18 +1,19 @@
-import React, { useState } from "react";
-import ReactAudioPlayer from "react-audio-player";
+import React from "react";
 
 export default function Phonetic(props) {
-  //console.log(props.phonetic);
-  let [sound, setSound] = useState(null);
+  let audio = new Audio(props.phonetic.audio);
 
-  function audio(event) {
-    setSound(event.props.phonetic.audio);
-    <ReactAudioPlayer src={sound} onPlay controls />;
+  function start() {
+    audio.play();
+  }
 
+  if (props.phonetic.audio) {
     return (
       <div className="phonetic">
-        <i class="far fa-play-circle" onClick={audio}></i> {props.phonetic.text}
+        <i class="far fa-play-circle" onClick={start}></i> {props.phonetic.text}
       </div>
     );
+  } else {
+    return <div className="phonetic">{props.phonetic.text}</div>;
   }
 }
