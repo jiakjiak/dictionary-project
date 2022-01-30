@@ -9,7 +9,6 @@ export default function Dictionary() {
 
   function handleRequest(request) {
     setResults(request.data[0]);
-    //console.log(request.data[0].meanings[0].definitions[0].definition);
   }
 
   function search(event) {
@@ -25,14 +24,22 @@ export default function Dictionary() {
 
   return (
     <div className="dictionary">
-      <form onSubmit={search}>
-        <input
-          type="search"
-          onChange={handleKeywordChange}
-          autoFocus="on"
-          placeholder="type a word"
-        />
-      </form>
+      <div className="row">
+        <div className="col"></div>
+        <div className="col-4">
+          <form onSubmit={search}>
+            <input
+              className="form-control rounded-pill py-2 text-center"
+              type="search"
+              onChange={handleKeywordChange}
+              autoFocus="on"
+              placeholder="search for a word"
+            />
+          </form>
+        </div>
+        <div className="col"></div>
+      </div>
+
       <Results results={results} />
     </div>
   );
