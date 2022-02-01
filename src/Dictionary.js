@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./Dictionary.css";
 
 export default function Dictionary() {
@@ -28,8 +30,10 @@ export default function Dictionary() {
         <div className="col"></div>
         <div className="col-4">
           <form onSubmit={search}>
+            <FontAwesomeIcon icon={faSearch} className="text-white" />
             <input
-              className="form-control rounded-pill py-2 text-center"
+              className="form-control rounded-pill py-2 text-center FontAwesomeIcon
+              icon={faSearch}"
               type="search"
               onChange={handleKeywordChange}
               autoFocus="on"
