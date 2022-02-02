@@ -1,0 +1,23 @@
+.phoneticAudio,
+.phoneticAudioMute {
+  color: #000;
+}
+
+.phoneticAudio:hover {
+  cursor: pointer;
+}
+
+.phoneticAudio {
+  display: inline-block;
+  border-radius: 180px;
+  background-color: #fff;
+  padding: 0.2em 0.4em;
+}
+
+.phoneticAudioMute {
+  display: inline-block;
+  border-radius: 180px;
+  background-color: #fff;
+  padding: 0.2em 0.5em;
+  margin-top: 5px;
+}
