@@ -30,15 +30,18 @@ export default function Dictionary() {
         <div className="col"></div>
         <div className="col-4">
           <form onSubmit={search}>
-            <FontAwesomeIcon icon={faSearch} className="text-white" />
-            <input
-              className="form-control rounded-pill py-2 text-center FontAwesomeIcon
-              icon={faSearch}"
-              type="search"
-              onChange={handleKeywordChange}
-              autoFocus="on"
-              placeholder="search for a word"
-            />
+            <div className="input-group">
+              <span className="input-group-text bg-white" id="search-icon">
+                <FontAwesomeIcon icon={faSearch} className="text-blue" />
+              </span>
+              <input
+                className="form-control py-2 searchBar"
+                type="search"
+                onChange={handleKeywordChange}
+                placeholder="search for a word"
+                aria-describedby="search-icon"
+              />
+            </div>
           </form>
         </div>
         <div className="col"></div>
