@@ -1,8 +1,8 @@
+import React from "react";
 import "./App.css";
 import Dictionary from "./Dictionary";
 import Background from "./background.mp4";
-import Sound from "react-player";
-import SolarSymphony from "./SolarSymphony.mp3";
+import ReactAudioPlayer from "react-audio-player";
 
 function App() {
   return (
