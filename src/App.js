@@ -1,6 +1,8 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
 import Background from "./background.mp4";
+import Sound from "react-player";
+import SolarSymphony from "./SolarSymphony.mp3";
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
         <source src={Background} type="video/mp4" />
       </video>
       <div className="container">
-        <header>THE BEGINNING OF WISDOM.</header>
+        <header>
+          THE BEGINNING OF <br /> WISDOM.
+        </header>
         <main>
           <Dictionary />
         </main>
