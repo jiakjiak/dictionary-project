@@ -1,5 +1,9 @@
 .dictionary {
-  margin: 50px 120px 0 120px;
+  margin-top: 50px;
+}
+
+.input-group {
+  width: 70%;
 }
 
 .input-group-text {

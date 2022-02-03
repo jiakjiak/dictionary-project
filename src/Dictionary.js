@@ -27,8 +27,8 @@ export default function Dictionary() {
   return (
     <div className="dictionary">
       <div className="row">
-        <div className="col"></div>
-        <div className="col-4">
+        <div className="col-2"></div>
+        <div className="col-8">
           <form onSubmit={search}>
             <div className="input-group">
               <span className="input-group-text bg-white" id="search-icon">
@@ -44,10 +44,11 @@ export default function Dictionary() {
             </div>
           </form>
         </div>
-        <div className="col"></div>
+        <div className="col-2"></div>
       </div>
-
-      <Results results={results} />
+      <div className="row">
+        <Results results={results} />
+      </div>
     </div>
   );
 }
