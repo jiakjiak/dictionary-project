@@ -1,0 +1,10 @@
+.photos {
+  color: #fff;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.photos img {
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
