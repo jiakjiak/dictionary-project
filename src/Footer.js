@@ -20,7 +20,7 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fab fa-linkedin-in"></i>
+        <i className="fab fa-linkedin-in"></i>
       </a>
       <a
         href="https://github.com/jiakjiak/dictionary-project"
@@ -28,7 +28,7 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fab fa-github"></i>
+        <i className="fab fa-github"></i>
       </a>
       <br />
     </div>
