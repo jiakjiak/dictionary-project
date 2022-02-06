@@ -3,6 +3,7 @@ import "./App.css";
 import Dictionary from "./Dictionary";
 import Background from "./background.mp4";
 import ReactAudioPlayer from "react-audio-player";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -25,6 +26,13 @@ function App() {
       >
         <source src={Background} type="video/mp4" />
       </video>
+
+      <ReactAudioPlayer
+        src="https://www.mboxdrive.com/SolarSymphony.mp3"
+        autoPlay
+        loop
+      />
+
       <div className="container">
         <header>
           THE BEGINNING OF <br /> WISDOM.
@@ -32,7 +40,7 @@ function App() {
         <main>
           <Dictionary />
         </main>
-        <footer>coded by JK</footer>
+        <Footer />
       </div>
     </div>
   );
