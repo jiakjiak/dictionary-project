@@ -4,8 +4,9 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="footer">
-      Like my dictionary app?
-      <br />
+      <div className="row">
+        <div className="col-md-12 footerNote">Like my dictionary app?</div>
+      </div>
       <a
         href="https://www.linkedin.com/in/jiakoh/"
         target="_blank"

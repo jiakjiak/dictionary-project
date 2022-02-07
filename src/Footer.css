@@ -1,7 +1,7 @@
 .footer {
   padding: 10px;
   margin: 10px;
-  font-size: 18px;
+  font-size: 14px;
   color: #fff;
   line-height: 2;
   text-align: center;
@@ -10,7 +10,7 @@
 .coder {
   border-radius: 20px;
   border: 2px white solid;
-  position: relative;
+  margin-top: 5px;
 }
 
 .coder:hover {
@@ -30,4 +30,16 @@
 .githubLink:hover,
 .linkedinLink:hover {
   color: #ffeaea;
+}
+
+@media (max-width: 576px) {
+  .footerNote {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .footerNote {
+    font-size: 14px;
+  }
 }

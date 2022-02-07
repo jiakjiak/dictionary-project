@@ -33,10 +33,15 @@ function App() {
         loop
       />
 
-      <div className="container">
-        <header>
-          THE BEGINNING OF <br /> WISDOM.
-        </header>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-12">
+            <header>
+              THE BEGINNING OF <br /> WISDOM.
+            </header>
+          </div>
+        </div>
+
         <main>
           <Dictionary />
         </main>

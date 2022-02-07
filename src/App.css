@@ -5,3 +5,16 @@ header {
   margin-top: 100px;
   text-align: center;
 }
+
+@media (max-width: 576px) {
+  header {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  header {
+    font-size: 60px;
+  }
+}

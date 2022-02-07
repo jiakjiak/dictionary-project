@@ -15,5 +15,15 @@
 .meaning .synonymTitle {
   font-weight: 450;
 }
-.meaning .synonym {
+
+@media (max-width: 576px) {
+  .meaning {
+    text-align: center;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .meaning {
+    text-align: center;
+  }
 }
