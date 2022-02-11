@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Dictionary from "./Dictionary";
 import Background from "./background.mp4";
-import ReactAudioPlayer from "react-audio-player";
+import Audio from "./audio/SolarSymphony.mp3";
 import Footer from "./Footer";
 
 function App() {
@@ -27,12 +27,6 @@ function App() {
         <source src={Background} type="video/mp4" />
       </video>
 
-      <ReactAudioPlayer
-        src="https://www.mboxdrive.com/SolarSymphony.mp3"
-        autoPlay
-        loop
-      />
-
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-12">
@@ -46,9 +40,19 @@ function App() {
           <Dictionary />
         </main>
         <Footer />
+        <AudioPlayer />
       </div>
     </div>
   );
 }
 
+class AudioPlayer extends React.Component {
+  render() {
+    return (
+      <div className="audioPlayer">
+        <audio ref="audio_tag" src={Audio} controls autoPlay loop />
+      </div>
+    );
+  }
+}
 export default App;
