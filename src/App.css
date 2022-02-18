@@ -6,8 +6,10 @@ header {
   text-align: center;
 }
 
-.audioPlayer {
-  text-align: center;
+audio {
+  width: 20%;
+  margin: 0 auto;
+  display: block;
 }
 
 @media (max-width: 576px) {
@@ -15,9 +17,14 @@ header {
     font-size: 40px;
   }
 
-  header,
-  .audioPlayer {
+  header {
     text-align: center;
+  }
+
+  audio {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
   }
 }
 
@@ -26,7 +33,9 @@ header {
     font-size: 60px;
   }
 
-  .audioPlayer {
-    text-align: center;
+  audio {
+    width: 15%;
+    margin: 0 auto;
+    display: block;
   }
 }
